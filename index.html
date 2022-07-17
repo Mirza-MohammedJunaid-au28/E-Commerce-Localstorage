@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    
+    <!-- Nav -->
+    <nav>
+        <section id="nav-section">
+            <h1 id="nav-heading">E-Commerce</h1>
+            <button id="cart" data-bs-toggle="modal" data-bs-target="#myModal"><img src="./assets/cart.gif" alt=""></button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center">Cart</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                           <table id="cart-table">
+
+                           </table>
+                           <span id="grand-total"></span>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="back" data-bs-dismiss="modal" onclick="saveChanges()">&#x2190; Back to Shopping</button>
+                            <button class="btn btn-info" data-bs-dismiss="modal" onclick="saveChanges()">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- Nav -->
+
+    <!-- main -->
+    <main>
+        <section id="main-section">
+            <section id="product-section">
+                
+            </section>
+        </section>
+    </main>
+    <!-- main -->
+
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
